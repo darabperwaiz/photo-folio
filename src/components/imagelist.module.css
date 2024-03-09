@@ -1,0 +1,124 @@
+:root {
+    --auto-grid-min-size: 180px
+}
+
+.imageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imageHeader img {
+    width: 35px;
+    filter: drop-shadow(0 6px  rgb(179, 179, 179));
+    cursor: pointer;
+}
+
+.imageHeader img:hover {
+    filter: drop-shadow(0 6px  rgb(179, 179, 179)) hue-rotate(320deg);
+    /* filter: drop-shadow(0 6px  rgb(179, 179, 179)); */
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.addBtn {
+    border: 2px solid blue;
+    color: blue;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: rgb(217, 238, 255); 
+    transition: all 0.3s ease-in-out;   
+    cursor: pointer;
+}
+
+.cancelBtn {
+    border: 2px solid red;
+    color: red;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: rgb(255, 217, 238);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer; 
+}
+
+.inputWrapper {
+    margin-top: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;    
+    background-color: rgb(235, 235, 235);
+    border-radius: 8px;
+}
+
+.form input {
+    padding: 10px 15px;
+    font-size: 17px;
+    border: none;
+    border-radius: 15px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btns button {
+    border: none;
+    width: 90px;
+    padding: 8px 10px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 5px;
+    
+}
+
+.btns button:nth-child(1) {
+    background-color: red;
+    color: white;
+    box-shadow: 0 0 8px rgba(255, 4, 4, 0.426);
+}
+
+.btns button:nth-child(2) {
+    background-color: blue;
+    color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 255, 0.403);
+}
+
+.imageList {
+    margin-top: 30px;
+    --auto-grid-min-size: 180px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    gap: 10px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+
+.CarouselWrap {
+    background-color: rgba(94, 94, 94, 0.521);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
+
+
+

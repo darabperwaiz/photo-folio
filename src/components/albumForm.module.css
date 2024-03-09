@@ -1,0 +1,49 @@
+.AlbumForm {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(224, 224, 224); 
+    width: 70%;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 15px;
+}
+
+.AlbumForm h2 {
+    /* color: ; */
+}
+
+
+
+.formInputs {
+    width: 95%;
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.formInputs input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+}
+
+.formInputs button {
+    width: 20%;
+    border-radius: 10px;
+    border: none;
+    font-size: 19px;
+    color: white;
+    cursor: pointer;
+}
+
+.formInputs button:nth-child(2) {
+    background-color: red;
+}
+
+.formInputs button:nth-child(3) {
+    background-color: blue;
+}
+
